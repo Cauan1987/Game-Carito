@@ -18,7 +18,6 @@ def run(episodios, em_treinamento=True, renderizar=False):
             with open('mountain_car.pkl', 'rb') as f:
                 q = pickle.load(f)
         else:
-            print("Arquivo 'mountain_car.pkl' não encontrado. Iniciando treinamento...")
             run(5000, em_treinamento=True, renderizar=False)  # Inicia o treinamento se o arquivo não existir
             return  # Após o treinamento, o código termina e o arquivo estará disponível
 
